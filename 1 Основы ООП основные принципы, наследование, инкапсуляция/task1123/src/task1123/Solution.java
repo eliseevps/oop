@@ -1,3 +1,5 @@
+//Complete
+
 package task1123;
 
 /*
@@ -28,10 +30,19 @@ public class Solution {
         if (inputArray == null || inputArray.length == 0) {
             return new Pair(null, null);
         }
+        int x = Integer.MAX_VALUE;
+        int y = Integer.MIN_VALUE;
 
-        // напишите тут ваш код
+        for (int i : inputArray) {
+            if (i < x) {
+                x = i;
+            }
+            if (i > y) {
+                y = i;
+            }
+        }
 
-        return new Pair(0, 0);
+        return new Pair(x, y);
     }
 
     public static class Pair {

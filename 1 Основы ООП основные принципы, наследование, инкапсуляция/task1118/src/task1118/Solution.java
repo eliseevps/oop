@@ -1,3 +1,5 @@
+//Complete
+
 package task1118;
 
 /* 
@@ -23,7 +25,7 @@ public class Solution {
 
     }
 
-    public class Cat {
+    public class Cat extends Pet {
 
     }
 
@@ -31,7 +33,7 @@ public class Solution {
 
     }
 
-    public class Dog {
+    public class Dog extends Pet {
 
     }
 }

@@ -1,3 +1,5 @@
+//Complete
+
 package task1104;
 
 /* 
@@ -19,19 +21,19 @@ public class Solution {
     public static void main(String[] args) {
     }
 
-    public class Manager {
-
-    }
-
-    public class Chief {
-
-    }
-
     public class Employee {
 
     }
+    
+    public class Manager extends Employee {
 
-    public class Secretary {
+    }
+
+    public class Chief extends Employee {
+
+    }
+
+    public class Secretary extends Employee {
 
     }
 }

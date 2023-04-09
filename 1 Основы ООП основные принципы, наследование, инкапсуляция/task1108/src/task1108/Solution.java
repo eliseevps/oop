@@ -1,3 +1,5 @@
+//Complete
+
 package task1108;
 
 /* 
@@ -16,9 +18,9 @@ public class Solution {
     }
 
     public class Cat {
-        public String name;
-        public int age;
-        public int weight;
+        private String name;
+        private int age;
+        private int weight;
 
         public Cat(String name, int age, int weight) {
             this.name = name;
@@ -30,7 +32,7 @@ public class Solution {
             return name;
         }
 
-        public void setName(String name) {
+        private void setName(String name) {
             this.name = name;
         }
 
@@ -38,8 +40,16 @@ public class Solution {
             return age;
         }
 
-        public void setAge(int age) {
+        private void setAge(int age) {
             this.age = age;
+        }
+
+        public int getWeight() {
+            return weight;
+        }
+
+        private void setWeight(int weight) {
+            this.weight = weight;
         }
     }
 }

@@ -1,3 +1,5 @@
+//Complete
+
 package task1109;
 
 /* 
@@ -9,8 +11,8 @@ package task1109;
 Requirements:
 1. Переменные класса Cat должны быть скрыты.
 2. Переменные класса Dog должны быть скрыты.
-3. Методы класса Cat должы быть скрыты.
-4. Методы класса Dog должы быть скрыты.
+3. Методы класса Cat должны быть скрыты.
+4. Методы класса Dog должны быть скрыты.
 5. Методы, с помощью которых классы Cat и Dog взаимодействуют друг с другом, должны быть публичными.*/
 
 public class Solution {
@@ -24,15 +26,15 @@ public class Solution {
 }
 
 class Cat {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Cat(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
@@ -46,15 +48,15 @@ class Cat {
 }
 
 class Dog {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Dog(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
