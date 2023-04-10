@@ -1,3 +1,5 @@
+//Complete
+
 package task1212;
 
 /* 
@@ -18,7 +20,7 @@ public class Solution {
 
     }
 
-    public static class Pet {
+    public abstract static class Pet {
         public String getName() {
             return "Я - котенок";
         }

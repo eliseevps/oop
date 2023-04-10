@@ -1,3 +1,5 @@
+//Complete
+
 package task1219;
 
 /* 
@@ -33,19 +35,55 @@ public class Solution {
     }
 
 
-    public class Human {
+    public class Human implements CanRun, CanSwim {
 
+        @Override
+        public void run() {
+
+        }
+
+        @Override
+        public void swim() {
+
+        }
     }
 
-    public class Duck {
+    public class Duck implements CanFly, CanRun, CanSwim {
 
+        @Override
+        public void fly() {
+
+        }
+
+        @Override
+        public void run() {
+
+        }
+
+        @Override
+        public void swim() {
+
+        }
     }
 
-    public class Penguin {
+    public class Penguin implements CanRun, CanSwim {
 
+        @Override
+        public void run() {
+
+        }
+
+        @Override
+        public void swim() {
+
+        }
     }
 
-    public class Airplane {
+    public class Airplane implements CanFly {
 
+        @Override
+        public void fly() {
+
+        }
     }
 }

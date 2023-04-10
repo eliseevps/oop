@@ -1,3 +1,5 @@
+//Complete
+
 package task1206;
 
 /* 
@@ -17,5 +19,11 @@ public class Solution {
 
     }
 
-    //Напишите тут ваши методы
+    public static void print (int i) {
+        System.out.print(i);
+    }
+
+    public static void print (String s) {
+        System.out.print(s);
+    }
 }

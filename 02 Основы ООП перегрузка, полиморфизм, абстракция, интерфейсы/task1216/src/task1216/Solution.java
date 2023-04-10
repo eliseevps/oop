@@ -1,3 +1,5 @@
+//Complete
+
 package task1216;
 
 /* 
@@ -17,6 +19,12 @@ public class Solution {
 
     }
 
-    //add an interface here - добавь интерфейс тут
+    public interface CanFly {
+        // лететь
+        public void fly();
+
+        // приземлиться
+        public void land();
+    }
 
 }

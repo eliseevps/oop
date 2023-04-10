@@ -1,3 +1,5 @@
+//Complete
+
 package task1214;
 
 /* 
@@ -22,7 +24,11 @@ public class Solution {
         public abstract String getName();
     }
 
-    public static class Cow {
+    public static class Cow extends Animal {
+        @Override
+        public String getName() {
+            return "Марьяна Федотовна";
+        }
     }
 
 }

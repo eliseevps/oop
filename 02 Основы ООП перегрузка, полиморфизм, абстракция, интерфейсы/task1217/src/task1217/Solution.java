@@ -1,3 +1,5 @@
+//Complete
+
 package task1217;
 
 /* 
@@ -19,6 +21,16 @@ public class Solution {
 
     }
 
-//add interfaces here - добавь интерфейсы тут
+    public interface CanFly {
+        public void fly();
+    }
+
+    public interface CanRun {
+        public void run();
+    }
+
+    public interface CanSwim {
+        public void swim();
+    }
 
 }

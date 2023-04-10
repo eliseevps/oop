@@ -1,3 +1,5 @@
+//Complete
+
 package task1207;
 
 /* 
@@ -15,8 +17,18 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
+        int i = 1;
+        Integer j = 130;
 
+        print(i);
+        print(j);
     }
 
-    //Напишите тут ваши методы
+    public static void print(int i) {
+        System.out.println(i);
+    }
+
+    public static void print(Integer i) {
+        System.out.println(i);
+    }
 }

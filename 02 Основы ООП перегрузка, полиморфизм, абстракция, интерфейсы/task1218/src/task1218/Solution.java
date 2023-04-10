@@ -1,3 +1,5 @@
+//Complete
+
 package task1218;
 
 /* 
@@ -32,15 +34,51 @@ public class Solution {
         public void eat();
     }
 
-    public class Dog {
+    public class Dog implements CanMove, CanEat {
+        @Override
+        public void move() {
+            System.out.println("Двигаюсь");
+        }
+
+        @Override
+        public void eat() {
+            System.out.println("Кушаю");
+        }
     }
 
-    public class Duck {
+    public class Duck implements CanFly, CanMove, CanEat {
+        @Override
+        public void fly() {
+            System.out.println("Летаю");
+        }
+
+        @Override
+        public void move() {
+            System.out.println("Двигаюсь");
+        }
+
+        @Override
+        public void eat() {
+            System.out.println("Кушаю");
+        }
     }
 
-    public class Car {
+    public class Car implements CanMove {
+        @Override
+        public void move() {
+            System.out.println("Двигаюсь");
+        }
     }
 
-    public class Airplane {
+    public class Airplane implements CanFly, CanMove {
+        @Override
+        public void fly() {
+            System.out.println("Летаю");
+        }
+
+        @Override
+        public void move() {
+            System.out.println("Двигаюсь");
+        }
     }
 }

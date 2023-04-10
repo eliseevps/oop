@@ -1,3 +1,5 @@
+//Complete
+
 package task1215;
 
 /* 
@@ -24,12 +26,28 @@ public class Solution {
         public abstract Pet getChild();
     }
 
-    public static class Cat {
+    public static class Cat extends Pet {
+        @Override
+        public String getName() {
+            return "Муська";
+        }
 
+        @Override
+        public Pet getChild() {
+            return new Cat();
+        }
     }
 
-    public static class Dog {
+    public static class Dog extends Pet {
+        @Override
+        public String getName() {
+            return "Жучка";
+        }
 
+        @Override
+        public Pet getChild() {
+            return new Dog();
+        }
     }
 
 }

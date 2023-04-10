@@ -1,3 +1,5 @@
+//Complete
+
 package task1205;
 
 /* 
@@ -22,9 +24,15 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
-        //Напишите тут ваше решение
-
-        return "Неизвестное животное";
+        if (o.getClass() == Cow.class) {
+            return "Корова";
+        } else if (o.getClass() == Dog.class) {
+            return "Собака";
+        } else if (o.getClass() == Whale.class) {
+            return "Кит";
+        } else {
+            return "Неизвестное животное";
+        }
     }
 
     public static class Cow {
