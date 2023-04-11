@@ -1,3 +1,5 @@
+//Complete
+
 package task1303;
 
 /* 
@@ -25,9 +27,17 @@ public class Solution {
         boolean isAlcoholic();
     }
 
-    public static class Beer {
+    public static class Beer implements Drink {
+        @Override
+        public boolean isAlcoholic() {
+            return true;
+        }
     }
 
-    public static class Cola {
+    public static class Cola implements Drink {
+        @Override
+        public boolean isAlcoholic() {
+            return false;
+        }
     }
 }

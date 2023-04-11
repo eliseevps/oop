@@ -1,3 +1,5 @@
+//Complete
+
 package task1225;
 
 /* 
@@ -31,9 +33,19 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
-        //напишите тут ваш код
-
-        return "Животное";
+        if (o.getClass() == Cat.class) {
+            return "Кот";
+        } else if (o.getClass() == Tiger.class) {
+            return "Тигр";
+        } else if (o.getClass() == Lion.class) {
+            return "Лев";
+        } else if (o.getClass() == Bull.class) {
+            return "Бык";
+        } else if (o.getClass() == Cow.class) {
+            return "Корова";
+        } else {
+            return "Животное";
+        }
     }
 
     public static class Cat extends Animal   //<--Классы наследуются!!

@@ -1,3 +1,5 @@
+//Complete
+
 package task1233;
 
 /* 
@@ -12,7 +14,7 @@ Requirements:
 4. Метод getMinimumAndIndex() должен возвращать минимальное число в массиве и его позицию (индекс).*/
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
 
         Pair<Integer, Integer> result = getMinimumAndIndex(data);
@@ -26,9 +28,16 @@ public class Solution {
             return new Pair<Integer, Integer>(null, null);
         }
 
-        //напишите тут ваш код
+        int min = Integer.MAX_VALUE;
+        int index = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] <= min) {
+                min = array[i];
+                index = i;
+            }
+        }
 
-        return new Pair<Integer, Integer>(0, 0);
+        return new Pair<Integer, Integer>(min, index);
     }
 
     public static class Pair<X, Y> {

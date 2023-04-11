@@ -1,3 +1,5 @@
+//Complete
+
 package task1306;
 
 /* 
@@ -24,11 +26,7 @@ public class Solution {
     }
 
     interface DBObject {
-        DBObject initializeIdAndName(long id, String name) {
-            this.id = id;
-            this.name = name;
-            return this;
-        }
+        DBObject initializeIdAndName(long id, String name);
     }
 
     static class User implements DBObject {
@@ -38,6 +36,13 @@ public class Solution {
         @Override
         public String toString() {
             return String.format("The user's name is %s, id = %d", name, id);
+        }
+
+        @Override
+        public User initializeIdAndName(long id, String name) {
+            this.id = id;
+            this.name = name;
+            return this;
         }
     }
 

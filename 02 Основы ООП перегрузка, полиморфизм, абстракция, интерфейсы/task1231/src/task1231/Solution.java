@@ -1,3 +1,5 @@
+//Complete
+
 package task1231;
 
 /* 
@@ -10,19 +12,27 @@ Requirements:
 1. Класс Pegasus должен реализовывать интерфейс CanFly.
 2. Класс Pegasus должен наследоваться от класса Horse.
 3. Класс SwimmingPegasus должен наследоваться от класса Pegasus.
-4. Обьект класса Horse создать можно.
-5. Обьект класса Pegasus создать можно.
+4. Объект класса Horse создать можно.
+5. Объект класса Pegasus создать можно.
 6. Метод swim() класса SwimmingPegasus не должен иметь реализации.*/
 
 public class Solution {
 
     public static void main(String[] args) {
-        Horse horse = new Pegasus();
-        horse.run();
+        Pegasus pegasus = new Pegasus();
+        SwimmingPegasus swimmingPegasus = new SwimmingPegasus();
+
+        pegasus.run();
+        pegasus.fly();
+
+        swimmingPegasus.run();
+        swimmingPegasus.fly();
+        swimmingPegasus.swim();
+
     }
 
     public static interface CanFly {
-        public abstract void fly();
+        public void fly();
     }
 
     public static abstract class Horse {
@@ -32,13 +42,16 @@ public class Solution {
     }
 
     public static class Pegasus extends Horse implements CanFly {
-        public abstract void fly() {
+        @Override
+        public void fly() {
 
         }
     }
 
     public static class SwimmingPegasus extends Pegasus {
-        public void swim();
+        public void swim() {
+
+        }
     }
 
 }

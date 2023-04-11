@@ -1,3 +1,5 @@
+//Complete
+
 package task1226;
 
 /* 
@@ -24,15 +26,49 @@ public class Solution {
 
     }
 
-    public class Cat {
+    public interface CanFly {
+        public void fly();
     }
 
-    public class Dog {
+    public interface CanRun {
+        public void run();
+    }
+
+    public interface CanClimb {
+        public void climb();
+    }
+
+    public class Cat implements CanRun, CanClimb {
+        @Override
+        public void run() {
+
+        }
+
+        @Override
+        public void climb() {
+
+        }
+    }
+
+    public class Dog implements CanRun {
+        @Override
+        public void run() {
+
+        }
     }
 
     public class Tiger extends Cat {
     }
 
-    public class Duck {
+    public class Duck implements CanRun, CanFly {
+        @Override
+        public void fly() {
+
+        }
+
+        @Override
+        public void run() {
+
+        }
     }
 }

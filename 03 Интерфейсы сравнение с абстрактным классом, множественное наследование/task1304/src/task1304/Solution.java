@@ -1,3 +1,5 @@
+//Complete
+
 package task1304;
 
 /* 
@@ -23,5 +25,15 @@ public class Solution {
         void refresh();
     }
 
-    //напишите тут ваш класс
+    public static class Screen implements Selectable, Updatable {
+        @Override
+        public void onSelect() {
+
+        }
+
+        @Override
+        public void refresh() {
+
+        }
+    }
 }

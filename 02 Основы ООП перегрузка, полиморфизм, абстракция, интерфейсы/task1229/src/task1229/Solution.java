@@ -1,3 +1,5 @@
+//Complete
+
 package task1229;
 
 /* 
@@ -26,7 +28,13 @@ public class Solution {
         public void workHard();
     }
 
-    public static class CTO implements Businessman {
+    public abstract static class Worker {
+        public void workHard(){
+
+        }
+    }
+
+    public static class CTO extends Worker implements Businessman {
 
     }
 }
