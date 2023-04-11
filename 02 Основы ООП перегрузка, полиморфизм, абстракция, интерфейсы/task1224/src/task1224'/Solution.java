@@ -26,9 +26,17 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
-        //напишите тут ваш код
-
-        return "Животное";
+        if (o.getClass() == Cat.class) {
+            return "Кот";
+        } else if (o.getClass() == Tiger.class) {
+            return "Тигр";
+        } else if (o.getClass() == Lion.class) {
+            return "Лев";
+        } else if (o.getClass() == Bull.class) {
+            return "Бык";
+        } else {
+            return "Животное";
+        }
     }
 
     public static class Cat {
