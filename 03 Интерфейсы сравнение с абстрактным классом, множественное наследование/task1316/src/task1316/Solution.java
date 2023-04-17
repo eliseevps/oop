@@ -1,3 +1,5 @@
+//Complete
+
 package task1316;
 
 /* 
@@ -23,22 +25,10 @@ public class Solution {
     }
 
     interface Button extends SimpleObject {
-
         final String NAME = "Submit";
-
-        public void onPress();
-
-        protected void onPress();
 
         void onPress();
 
-        private void onPress();
-
-        protected String onPress(Object o);
-
         String onPress(Object o);
-
-        private String onPress(Object o);
-
     }
 }

@@ -1,3 +1,5 @@
+//Complete
+
 package task1310;
 
 /* 
@@ -26,13 +28,13 @@ public class Solution {
         boolean inspiresOthersToWork();
     }
 
-    interface Secretary {
+    interface Secretary extends Person{
     }
 
-    interface Boss {
+    interface Boss extends Person, HasManagementPotential {
     }
 
-    class Manager {
+    class Manager implements Boss {
         public void use(Person person) {
             person.startToWork();
         }
@@ -45,7 +47,7 @@ public class Solution {
         }
     }
 
-    class Subordinate {
+    class Subordinate implements Secretary {
         public void use(Person person) {
         }
 
