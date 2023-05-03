@@ -1,6 +1,6 @@
 package task1327;
 
-public class Person {
+public class Person implements RepkaItem{
     private String name;
     private String namePadezh;
 
@@ -23,5 +23,9 @@ public class Person {
 
     public void setNamePadezh(String namePadezh) {
         this.namePadezh = namePadezh;
+    }
+
+    public void pull(Person second) {
+        System.out.printf("%s за %s \n", this.getName(), second.getNamePadezh());
     }
 }

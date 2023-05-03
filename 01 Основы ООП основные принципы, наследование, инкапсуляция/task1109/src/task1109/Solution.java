@@ -26,8 +26,8 @@ public class Solution {
 }
 
 class Cat {
-    private String name;
-    private int speed;
+    private final String name;
+    private final int speed;
 
     public Cat(String name, int speed) {
         this.name = name;
@@ -48,8 +48,8 @@ class Cat {
 }
 
 class Dog {
-    private String name;
-    private int speed;
+    private final String name;
+    private final int speed;
 
     public Dog(String name, int speed) {
         this.name = name;

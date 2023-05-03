@@ -1,9 +1,8 @@
+//Complete
+
 package task1319;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /* 
 Писатель в файл с консоли
@@ -23,6 +22,21 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        // напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        try (bufferedReader; BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(bufferedReader.readLine()))) {
+            String line;
+            boolean isFirstLine = true;
+
+            while (!(line = bufferedReader.readLine()).equals("exit")) {
+                if (isFirstLine) {
+                    bufferedWriter.write(line);
+                    isFirstLine = false;
+                    continue;
+                }
+                bufferedWriter.write("\n" + line);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

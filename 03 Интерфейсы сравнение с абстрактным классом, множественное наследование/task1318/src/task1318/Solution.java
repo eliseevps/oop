@@ -1,9 +1,11 @@
+//Complete
+
 package task1318;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 /* 
 Чтение файла
@@ -20,6 +22,17 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        // напишите тут ваш код
+        try (BufferedReader bufferedReader =
+                     new BufferedReader(new InputStreamReader(System.in));
+             FileInputStream fileInputStream =
+                     new FileInputStream(bufferedReader.readLine())) {
+            int symbol;
+
+            while ((symbol = fileInputStream.read()) != -1) {
+                System.out.print((char) symbol);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

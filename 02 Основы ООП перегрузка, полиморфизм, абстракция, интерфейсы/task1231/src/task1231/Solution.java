@@ -31,8 +31,8 @@ public class Solution {
 
     }
 
-    public static interface CanFly {
-        public void fly();
+    public interface CanFly {
+        void fly();
     }
 
     public static abstract class Horse {

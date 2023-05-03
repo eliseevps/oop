@@ -27,15 +27,15 @@ public class Solution {
     }
 
     public interface CanFly {
-        public void fly();
+        void fly();
     }
 
     public interface CanRun {
-        public void run();
+        void run();
     }
 
     public interface CanClimb {
-        public void climb();
+        void climb();
     }
 
     public class Cat implements CanRun, CanClimb {

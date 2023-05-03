@@ -24,11 +24,11 @@ public class Solution {
     }
 
     public interface CanRun {
-        public void run();
+        void run();
     }
 
     public interface CanSwim {
-        public void swim();
+        void swim();
     }
 
     public abstract static class Human implements CanRun, CanSwim {

@@ -21,10 +21,10 @@ public class Solution {
 
     public interface CanFly {
         // лететь
-        public void fly();
+        void fly();
 
         // приземлиться
-        public void land();
+        void land();
     }
 
 }

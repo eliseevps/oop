@@ -1,3 +1,5 @@
+//Complete
+
 package task1406;
 
 /* 
@@ -12,13 +14,12 @@ Requirements:
 3. В переменной obj должен храниться объект, который будет одновременно являться и Mouse, и GrayMouse, и Jerry.
 4. Метод main должен вызывать метод printClasses.*/
 
-import com.javarush.task.task14.task1406.Solution.Mouse;
+//import com.javarush.task.task14.task1406.Solution.Mouse;
 
 public class Solution {
     public static void main(String[] args) {
-        Object obj = //Add your code here
-
-                Mouse mouse = (Mouse) obj;
+        Object obj = new Jerry();
+        Mouse mouse = (Mouse) obj;
         GrayMouse grayMouse = (GrayMouse) mouse;
         Jerry jerry = (Jerry) grayMouse;
 

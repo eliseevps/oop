@@ -18,7 +18,7 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         Drink beer = new AlcoholicBeer();
-        System.out.println(beer.toString());
+        System.out.println(beer);
     }
 
     public interface Drink {

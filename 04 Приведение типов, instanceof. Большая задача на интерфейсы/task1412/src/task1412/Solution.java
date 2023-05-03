@@ -27,7 +27,7 @@ public class Solution {
         //напишите тут ваш код
     }
 
-    static interface Movable {
+    interface Movable {
 
         void move();
     }
@@ -44,7 +44,7 @@ public class Solution {
 
     }
 
-    static interface Drawable {
+    interface Drawable {
         void draw();
     }
 

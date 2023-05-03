@@ -34,7 +34,7 @@ public class Solution {
         //написать тут вашу реализацию пунктов 1-4
     }
 
-    static interface Apartment {
+    interface Apartment {
     }
 
     static class OneRoomApt implements Apartment {

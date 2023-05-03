@@ -1,6 +1,10 @@
+//Complete
+
 package task1326;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -39,7 +43,30 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        // напишите тут ваш код
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+             FileInputStream fileInputStream = new FileInputStream(bufferedReader.readLine());
+             Scanner scanner = new Scanner(fileInputStream)) {
+
+            List<Integer> inputArray = new ArrayList<>();
+            List<Integer> outputArray = new ArrayList<>();
+
+            while (scanner.hasNext()) {
+                inputArray.add(scanner.nextInt());
+            }
+
+            for (Integer i : inputArray) {
+                if (i % 2 == 0) {
+                    outputArray.add(i);
+                }
+            }
+            Collections.sort(outputArray);
+
+            for (Integer i : outputArray) {
+                System.out.println(i);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }

@@ -1,3 +1,5 @@
+//Complete
+
 package task1408;
 
 /* 
@@ -34,18 +36,23 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        Hen hen = HenFactory.getHen(Country.BELARUS);
+        Hen hen = HenFactory.getHen(Country.MOLDOVA);
         hen.getCountOfEggsPerMonth();
+        System.out.println(hen.getDescription());
     }
 
-    static class HenFactory {
+    static class HenFactory implements Country {
 
         static Hen getHen(String country) {
             Hen hen = null;
-            //напишите тут ваш код
+            switch (country) {
+                case RUSSIA -> hen = new RussianHen();
+                case UKRAINE -> hen = new UkrainianHen();
+                case MOLDOVA -> hen = new MoldovaHen();
+                case BELARUS -> hen = new BelarusHen();
+                default -> System.out.println("Страна не найдена!");
+            }
             return hen;
         }
     }
-
-
 }

@@ -21,8 +21,8 @@ public class Solution {
 
     public class Cat {
 
-        private String name;
-        private int age;
+        private final String name;
+        private final int age;
         private int weight;
         private int speed;
 

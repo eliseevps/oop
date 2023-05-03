@@ -15,7 +15,7 @@ Requirements:
 5. В интерфейсе Button должно остаться корректное объявление метода onPress.*/
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println(SimpleObject.NAME);
         System.out.println(Button.NAME);
     }
@@ -25,7 +25,7 @@ public class Solution {
     }
 
     interface Button extends SimpleObject {
-        final String NAME = "Submit";
+        String NAME = "Submit";
 
         void onPress();
 

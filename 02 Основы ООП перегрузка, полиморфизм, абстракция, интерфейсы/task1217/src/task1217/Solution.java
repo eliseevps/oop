@@ -22,15 +22,15 @@ public class Solution {
     }
 
     public interface CanFly {
-        public void fly();
+        void fly();
     }
 
     public interface CanRun {
-        public void run();
+        void run();
     }
 
     public interface CanSwim {
-        public void swim();
+        void swim();
     }
 
 }

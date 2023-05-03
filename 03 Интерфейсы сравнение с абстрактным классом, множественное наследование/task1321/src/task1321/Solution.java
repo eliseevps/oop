@@ -1,3 +1,5 @@
+//Complete
+
 package task1321;
 
 
@@ -16,18 +18,18 @@ Requirements:
 public class Solution {
 
     public static void main(String[] args) {
-        System.out.println(Dream.HOBBY.toString());
+        System.out.println(Dream.HOBBY);
         System.out.println(new Hobby().INDEX);
     }
 
     interface Desire {
     }
 
-    interface Dream implements Hobby {
-        public static Hobby HOBBY = new Hobby();
+    interface Dream  {
+        Hobby HOBBY = new Hobby();
     }
 
-    static class Hobby extends Desire, Dream {
+    static class Hobby implements Desire, Dream {
         static int INDEX = 1;
 
         @Override

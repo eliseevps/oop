@@ -42,7 +42,7 @@ public class Solution {
     }
 
     abstract static class Book {
-        private String author;
+        private final String author;
 
         public Book(String author) {
             this.author = author;

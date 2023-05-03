@@ -1,7 +1,8 @@
+//Complete
+
 package task1404;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Коты
@@ -20,33 +21,32 @@ Requirements:
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNextLine()) {
+            String str = scanner.nextLine();
+            if (str.equals("")) {
+                break;
+            } else {
+                System.out.println(CatFactory.getCatByKey(str).toString());
+            }
+        }
     }
 
     static class CatFactory {
         static Cat getCatByKey(String key) {
-            Cat cat;
-            switch (key) {
-                case "vaska":
-                    cat = new MaleCat("Василий");
-                    break;
-                case "murka":
-                    cat = new FemaleCat("Мурочка");
-                    break;
-                case "kiska":
-                    cat = new FemaleCat("Кисюлька");
-                    break;
-                default:
-                    cat = new Cat(key);
-                    break;
-            }
+            Cat cat = switch (key) {
+                case "vaska" -> new MaleCat("Василий");
+                case "murka" -> new FemaleCat("Мурочка");
+                case "kiska" -> new FemaleCat("Кисюлька");
+                default -> new Cat(key);
+            };
             return cat;
         }
     }
 
     static class Cat {
-        private String name;
+        private final String name;
 
         protected Cat(String name) {
             this.name = name;
